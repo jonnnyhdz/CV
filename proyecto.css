@@ -1,13 +1,13 @@
 body {
     font-family: Arial, sans-serif;
-    margin: auto;
-    padding: auto;
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
     background-image: url('https://p4.wallpaperbetter.com/wallpaper/102/633/279/dark-gradient-artist-artwork-wallpaper-preview.jpg');
     background-size: cover;
     background-position: center;
     color: #fff;
-    height: 100vh;
+    min-height: 100vh;
 }
 
 header {
@@ -39,59 +39,71 @@ main {
 }
 
 .project-card {
-    background-color: #1f252b81; /* Color de fondo de las cards */
-    color: #0e9170;
+    background-color: #1f252b81;
+    color: #ffffff;
     border-radius: 10px;
-    padding: 20px;
-    margin: 20px;
-    width: 300px;
+    padding: 15px; /* Ajuste del padding */
+    margin: 15px; /* Ajuste del margin */
+    width: 100%;
     text-align: center;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sutil sombra */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .project-card img {
     max-width: 100%;
-    border-radius: 8px; /* Esquinas redondeadas */
+    border-radius: 8px;
     margin-bottom: 10px;
 }
 
 .project-card a {
     display: inline-block;
-    background-color: #3498db82; /* Color del botón */
+    background-color: #3498db82;
     color: #fff;
-    padding: 10px 20px;
+    padding: 8px 16px; /* Ajuste del padding */
     text-decoration: none;
-    border-radius: 5px; /* Bordes redondeados */
-    transition: background-color 0.3s ease-in-out; /* Transición de color */
+    border-radius: 5px;
+    transition: background-color 0.3s ease-in-out;
 }
 
 .project-card a:hover {
-    background-color: #3c6e8f; /* Color del botón al pasar el ratón */
+    background-color: #3c6e8f;
 }
 
 .footer {
-    background-color: #2c3e5000; /* Gris oscuro */
-    color: #ecf0f1; /* Blanco */
+    background-color: #2c3e5000;
+    color: #ecf0f1;
     text-align: center;
     padding: 10px;
-    position: relative; /* Cambiado de fixed a relative */
+    position: relative;
     bottom: 0;
 }
 
 .footer a {
-    color: #ecf0f1; /* Blanco */
+    color: #ecf0f1;
     text-decoration: none;
     margin: 0 10px;
 }
 
 .footer a:hover {
-    color: #3498db; /* Azul claro al pasar el ratón sobre el enlace */
+    color: #3498db;
 }
 
 .icon {
-    font-size: 64px; /* Tamaño de los íconos */
+    font-size: 64px;
     margin: 0 5px;
 }
 
+@media (max-width: 768px) {
+    main {
+        padding: 10px;
+    }
+
+    .project-card {
+        width: calc(100% - 30px); /* Restamos el doble del margin para evitar desbordamiento */
+    }
 
 
+    .footer {
+        position: static;
+    }
+}
