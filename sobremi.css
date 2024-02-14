@@ -1,0 +1,128 @@
+body{
+font-family: Arial, sans-serif;
+margin: auto;
+padding: auto;
+box-sizing: border-box;
+background-image: url('https://p4.wallpaperbetter.com/wallpaper/102/633/279/dark-gradient-artist-artwork-wallpaper-preview.jpg');
+background-size: cover;
+background-position: center;
+color: #fff;
+height: 100vh;
+}
+
+h2{
+    text-align: center;
+    color: #ffffff;
+}
+
+header {
+    background-color: #000000;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+}
+
+nav {
+    background-color: #000000;
+    overflow: hidden;
+    text-align: center;
+}
+
+nav a {
+    display: inline-block;
+    color: #ffffff;
+    padding: 14px 16px;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.main-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 70vh;
+}
+
+.container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.left-cards,
+.right-cards {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.perfil {
+    text-align: center;
+}
+
+.perfil img {
+    border-radius: 50%;
+    width: 400px;
+    height: 600px;
+    object-fit: cover;
+    margin: 20px;
+}
+
+.card {
+    background-color: #1f252b81;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    padding: 20px;
+    margin: 10px;
+    width: 430px;
+}
+
+.card h2 {
+    color: #0e9170;
+}
+
+.card p {
+    color: #ffffff;
+    font-size: smaller;
+    text-align: center;
+    font-weight: 200;
+    font-size: 14px;
+}
+
+.card .mja{
+    text-align: center;
+    font-weight: 200;
+    font-size: 15px;
+    letter-spacing: 5px;
+}
+
+.card .mj{
+    text-align: center;
+    font-weight: 200;
+    font-size: 15px;
+    letter-spacing: 10px;
+}
+
+.footer {
+    background-color: #2c3e5000; /* Gris oscuro */
+    color: #ecf0f1; /* Blanco */
+    text-align: center;
+    padding: 10px;
+    position: relative; /* Cambiado de fixed a relative */
+    bottom: 0;
+}
+
+.footer a {
+    color: #ecf0f1; /* Blanco */
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.footer a:hover {
+    color: #3498db; /* Azul claro al pasar el ratón sobre el enlace */
+}
+
+.icon {
+    font-size: 64px; /* Tamaño de los íconos */
+    margin: 0 5px;
+}
